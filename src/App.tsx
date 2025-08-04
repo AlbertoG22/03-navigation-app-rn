@@ -1,11 +1,13 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { Text, View } from 'react-native';
+import { StackNavigator } from './presentation/routes/StackNavigator';
 
 function App() {
 
   return (
-    <View>
-      <Text>App.tsx</Text>
-    </View>
+    <NavigationContainer>
+      <StackNavigator />
+    </NavigationContainer>
   );
 }
 
